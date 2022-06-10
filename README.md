@@ -37,8 +37,10 @@ test 1: "It should return an array of numbers from 0 to the user's inputted numb
 Code: countDown(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-Describe: beepBoop()
-
-test 1: "It should replace 1 with "Beep!"
+test 2: "It should replace 1 with "Beep!"
 Code: beepBoop(5);
 Expected Output: [0, "Beep!", 2, 3, 4, 5]
+
+test 3: "It should replace 11 with "Beep!"
+Code: beepBoop(11);
+Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Beep!"]
