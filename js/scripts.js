@@ -8,7 +8,14 @@ function beepBoop(number) {
   return countDownArray.reverse();
 }
 
-console.log(countDownArray(5));
-
 // let digitsArray = number.toString().split("")
 //   digitsArray.forEach(function)
+
+// UI logic
+$(document).ready(function () {
+  $("#formOne").submit(function (event) {
+    event.preventDefault();
+    const answer = $("input#answer").val();
+    $("#result").text(beepBoop(answer));
+  });
+});

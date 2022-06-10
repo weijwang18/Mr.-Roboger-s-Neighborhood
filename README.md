@@ -33,6 +33,10 @@ Copyright (c) _2022_ _Winnie Wang_
 
 Describe: beepBoop()
 
-test: "It should return an array of numbers from 0 to the user's inputted number"
+test 1: "It should return an array of numbers from 0 to the user's inputted number"
 Code: beepBoop(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
+
+test 2: "It should say "Please enter a positive number" if the user enters a negative number
+Code: beepBoop(15);
+Expected Output: "Please enter a positive number"
