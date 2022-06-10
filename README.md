@@ -31,10 +31,10 @@ _MIT_
 
 Copyright (c) _2022_ _Winnie Wang_
 
-Describe: countDown()
+Describe: beepBoop()
 
 test 1: "It should return an array of numbers from 0 to the user's inputted number"
-Code: countDown(5);
+Code: beepBoop(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
 
 test 2: "It should replace 1 with "Beep!"
@@ -43,4 +43,12 @@ Expected Output: [0, "Beep!", 2, 3, 4, 5]
 
 test 3: "It should replace 11 with "Beep!"
 Code: beepBoop(11);
-Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Beep!"]
+Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]
+
+test 4: "It should replace 2 with "Boop!", replace 1 with "Beep!""
+Code: beepBoop(5);
+Expected Output: [0, "Beep!", "Boop!", 3, 4, 5]
+
+test 5: "It should replace 2 with "Boop!", replace 1 with "Beep!", replace 3 with "Won't you be my neighbor?""
+Code: beepBoop(5);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]

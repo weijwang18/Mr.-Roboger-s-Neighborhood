@@ -1,23 +1,22 @@
 // Business logic
 
-function countDown(number) {
+function beepBoop(number) {
   const countDownArray = [];
   for (let i = number; i >= 0; i--) {
     countDownArray.push(parseInt(i));
   }
-  debugger;
-  let output = countDownArray.reverse().toString();
-  let outputArray = output.split(",");
+  let outputArray = countDownArray.reverse().toString().split(",");
   outputArray.forEach(function (digit) {
     if (digit.includes(1) && digit > 0) {
       outputArray[digit] = "Beep!";
+    } else if (digit.includes(2) && digit > 0) {
+      outputArray[digit] = "Boop!";
+    } else if (digit.includes(3) && digit > 0) {
+      outputArray[digit] = "Won't you be my neighbor?";
     }
   });
   return outputArray;
 }
-
-// let digitsArray = number.toString().split("")
-//   digitsArray.forEach(function)
 
 // UI logic
 $(document).ready(function () {
@@ -25,7 +24,7 @@ $(document).ready(function () {
     event.preventDefault();
     const answer = $("input#answer").val();
     if (answer >= 0) {
-      $("#result").text(countDown(answer));
+      $("#result").text(beepBoop(answer));
     } else {
       alert("Please enter a positive number!");
     }
