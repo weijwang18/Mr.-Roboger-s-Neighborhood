@@ -52,3 +52,7 @@ Expected Output: [0, "Beep!", "Boop!", 3, 4, 5]
 test 5: "It should replace 2 with "Boop!", replace 1 with "Beep!", replace 3 with "Won't you be my neighbor?""
 Code: beepBoop(5);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
+
+test 6: "It should follow the hierarchy rules."
+Code: beepBoop(14);
+Expected Output: ["0", "Beep", "Boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?", "Beep!"]
