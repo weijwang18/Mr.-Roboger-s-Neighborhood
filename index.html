@@ -20,28 +20,31 @@
     <title>Mr. Roboger's Neighborhood</title>
   </head>
   <body>
-    <div class="container">
+    <div class="header">
       <h1>Meet Mr.Roboger!</h1>
-      <div class="row">
-        <div class="col-4">
-          <img src="img/robot.png" />
-        </div>
-        <div class="col form">
-          <form id="formOne">
-            <div class="form-group">
-              <label
-                >Mr.Roboger wants to talk with you. He only understands numbers
-                though, so don't try to say anything else. 😉
-              </label>
-            </div>
-            <input id="answer" type="number" />
-            <div class="submit">
-              <button type="submit" class="btn btn-outline-info">Sent</button>
-            </div>
-          </form>
+      <h5>
+        Mr.Roboger wants to talk with you. He only understands numbers though,
+        so don't try to say anything else. 😉
+      </h5>
+    </div>
+    <form id="formOne">
+      <input id="answer" type="number" />
+      <div class="submit">
+        <button type="submit" class="btn btn-info">Sent</button>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-3">
+        <img src="img/robot.png" />
+      </div>
+      <div class="col-9">
+        <div class="card text-bg-info mb-3" style="max-width: 18rem">
+          <div class="card-header">Mr. Roboger says:</div>
+          <div class="card-body">
+            <div id="result"></div>
+          </div>
         </div>
       </div>
-      <div id="result"></div>
     </div>
   </body>
 </html>

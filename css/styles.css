@@ -1,11 +1,35 @@
-.img {
-  display: block;
+body {
+  text-align: center;
+  background: radial-gradient(
+    circle at 0.7% 1%,
+    rgb(215, 248, 247) 0%,
+    rgb(102, 188, 239) 100.2%
+  );
+  background-repeat: repeat;
 }
 
-h1 {
-  text-align: center;
+.card {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.header {
+  margin-top: 40px;
+}
+
+img {
+  display: block;
+  margin-left: 25%;
+}
+
+.card {
+  margin-top: 120px;
 }
 
 button {
-  margin-top: 10px;
+  margin: 10px;
+}
+
+.card {
+  display: none;
 }
