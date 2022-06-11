@@ -6,6 +6,7 @@ function beepBoop(number) {
     countDownArray.push(parseInt(i));
   }
   let outputArray = countDownArray.reverse().toString().split(",");
+  // split numbers into digits
   outputArray.forEach(function (digit) {
     if (digit.includes(3) && digit > 0) {
       outputArray[digit] = "Won't you be my neighbor?";
