@@ -20,17 +20,28 @@
     <title>Mr. Roboger's Neighborhood</title>
   </head>
   <body>
-    <h1>Meet Mr.Roboger!</h1>
-    <form id="formOne">
-      <div class="form-group">
-        <label
-          >Mr.Roboger wants to talk with you. He only understands numbers
-          though, so don't try to say anything else.</label
-        >
+    <div class="container">
+      <h1>Meet Mr.Roboger!</h1>
+      <div class="row">
+        <div class="col-4">
+          <img src="img/robot.png" />
+        </div>
+        <div class="col form">
+          <form id="formOne">
+            <div class="form-group">
+              <label
+                >Mr.Roboger wants to talk with you. He only understands numbers
+                though, so don't try to say anything else. 😉
+              </label>
+            </div>
+            <input id="answer" type="number" />
+            <div class="submit">
+              <button type="submit" class="btn btn-outline-info">Sent</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <input id="answer" type="number" />
-      <button type="submit" class="btn">Submit</button>
-    </form>
-    <div id="result"></div>
+      <div id="result"></div>
+    </div>
   </body>
 </html>
